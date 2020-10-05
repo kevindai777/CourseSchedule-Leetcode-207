@@ -14,7 +14,7 @@ let visiting = new Set()
 //Make the adjacency list
 for (let [v,e] of prerequisites) {
     if (!graph.has(v)) {
-        graph.set(v, [e])
+        graph.set(v, [])
     } else {
         let edges = graph.get(v)
         edges.push(e)
